@@ -10,16 +10,47 @@
     <style>
         body {
             font-family: "Inter", sans-serif;
-            background-color: FloralWhite;
+            background-color: NavajoWhite;
             text-transform: capitalize;
         }
         .title {
             text-align: center;
             padding: 1%;
-            font-size: 25px;
+            font-size: 40px;
         }
+        .images {
+            position: fixed;
+            top: 30%;
+            width: 400px;
+            height: 400px;
+            border-radius: 3%;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+            opacity: 0.8;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        .images:hover {
+            opacity: 1;
+            box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
+        }
+        .images:active {
+            width: 410px;
+            height: 410px;
+        }
+
+        #A { left: 10%; }
+        #B { left: 40%; }
+        #C { left: 70%; }
     </style>
+    <script>
+        function clickImage(imageNum) {
+            if (imageNum == 1) { window.location.href = "./recipe-pages/shawarma.html"; }
+        }
+    </script>
     <p class="title">Odin Recipes</p>
+    <img onclick=clickImage(1) alt="Image of Shawarma" src="./images/shawarma.jpg" class="images" id="A">
+    <img alt="Image of Broccoli Cheddar" src="./images/bc.jpg" class="images"  id="B">
+    <img alt="Image of Chicken Curry" src="./images/chicken-curry.jpg" class="images"  id="C">
     
 </body>
 </html>
