@@ -5,18 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Recipes</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>    
-    <script>
-        function clickImage(imageNum) {
-            if (imageNum == 1) { window.location.href = "./recipe-pages/shawarma.html"; }
-        }
-    </script>
-    <p class="title">Odin Recipes</p>
-    <img onclick=clickImage(1) alt="Image of Shawarma" src="./images/shawarma.jpg" class="images" id="A">
-    <img alt="Image of Broccoli Cheddar" src="./images/bc.jpg" class="images"  id="B">
-    <img alt="Image of Chicken Curry" src="./images/chicken-curry.jpg" class="images"  id="C">
+    <p class="title">3 Recipes</p>
+    <p class="by">by Anthony Bekhet</p>
     
+    <div class="recipe-desc" id="Recipe1">
+        <strong>
+            Chicken Shawarma
+        </strong>
+        <p>
+            Chicken Shawarma is a Middle Eastern dish made from marinated chicken that’s stacked on a spit and slow-roasted.
+        </p>
+        <p>
+            It’s typically served in a wrap or pita with veggies and sauces.
+        </p>
+        <p>
+            It's moderately easy to make at home with the right spices and a grill or oven.
+        </p>
+    </div>
+    <div class="recipe-desc" id="Recipe2">
+        <strong>
+            Broccoli Cheddar Soup
+        </strong>
+        <p>
+            Broccoli Cheddar Soup is a creamy, comforting soup made with broccoli and sharp cheddar cheese. 
+        </p>
+        <p>
+            It originates from American cuisine, often served in bread bowls
+        </p>
+        <p>
+            It's fairly easy to make at home using basic ingredients like broccoli, cheese, milk, and stock.
+        </p>
+    </div>
+    <div class="recipe-desc" id="Recipe3">
+        <strong>
+            Chicken Enchiladas
+        </strong>
+        <p>
+            Chicken Enchiladas are a popular Mexican dish consisting of corn tortillas rolled around a filling, usually of spiced chicken, and covered with a chili pepper sauce. 
+        </p>
+        <p>
+            They are often topped with cheese and baked. 
+        </p>
+        <p>
+            Making them at home is moderately easy but can be time-consuming due to the sauce preparation and assembly.
+        </p>
+    </div>
+
+    <img onclick=clickImage(1) alt="Image of Shawarma" src="./images/shawarma.jpg" class="images" id="A">
+    <img onclick=clickImage(2) alt="Image of Broccoli Cheddar" src="./images/bc.jpg" class="images"  id="B">
+    <img onclick=clickImage(3) alt="Image of Chicken Enchiladas" src="./images/chicken-en.jpeg" class="images"  id="C">
 </body>
 </html>

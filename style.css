@@ -1,12 +1,22 @@
-body {
+body, html {
     font-family: "Inter", sans-serif;
-    background-color: NavajoWhite;
+    background-color: Tan;
     text-transform: capitalize;
 }
 .title {
     text-align: center;
-    padding: 1%;
+    padding: 0%;
     font-size: 40px;
+    margin: 0%;
+    text-decoration: underline;
+    margin-top: 1%;
+}
+.by {
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
+    font-size: 20px;
+    
 }
 .images {
     position: fixed;
@@ -15,12 +25,12 @@ body {
     height: 400px;
     border-radius: 3%;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    opacity: 0.8;
-    transition: 0.2s;
+    opacity: 1;
+    transition: 0.5s;
     cursor: pointer;
 }
 .images:hover {
-    opacity: 1;
+    opacity: 0.1;
     box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
 }
 .images:active {
@@ -28,6 +38,51 @@ body {
     height: 410px;
 }
 
-#A { left: 10%; }
-#B { left: 40%; }
-#C { left: 70%; }
+#A, #Recipe1 { left: 10%; }
+#B, #Recipe2 { left: 40%; }
+#C, #Recipe3{ left: 70%; }
+
+.recipe-desc {
+    color: Maroon;
+    text-align: center;
+    position: fixed;
+    top: 30%;
+    width: 400px;
+    height: 400px;
+    border-radius: 3%;
+    margin-top: 4%;
+    font-size: 18px;
+}
+
+.recipe-list {
+    background-color: Wheat;
+    height: 750px;
+    width: 750px;
+    margin: auto;
+    margin-top: 3%;
+    border-radius: 1%;
+    border: 5px solid SandyBrown;
+    overflow: auto;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.backBtn {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    color: black;
+}
+.backBtn:hover {
+    font-size: 51px;
+    left: 49%;
+}
+
+.info {
+    padding: 5%;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 600px;
+}
